@@ -1,0 +1,15 @@
+.title {
+   font-weight: 700;
+   font-size: 30px;
+   line-height: 30px;
+   text-align: center;
+   color: $main_text_color;
+
+   &__main {
+      font-weight: 700;
+      font-size: 42px;
+      line-height: 20px;
+      text-transform: uppercase;
+      color: $second_text_color;
+   }
+}
