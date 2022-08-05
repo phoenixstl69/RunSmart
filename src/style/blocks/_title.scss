@@ -1,14 +1,14 @@
 .title {
    font-weight: 700;
-   font-size: 30px;
+   @include adaptiv-font(30, 20);
    line-height: 30px;
    text-align: center;
    color: $main_text_color;
 
    &__main {
+      @include adaptiv-font(42, 30);
       font-weight: 700;
-      font-size: 42px;
-      line-height: 20px;
+      line-height: 45px;
       text-transform: uppercase;
       color: $second_text_color;
    }

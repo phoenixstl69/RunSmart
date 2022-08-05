@@ -12,13 +12,13 @@
 
    &__offisial {
       font-weight: 500;
-      font-size: 12px;
+      @include adaptiv-font(12, 10);
       color: $second_text_color;
       text-align: center;
 
       span {
          display: block;
-         font-size: 18px;
+         @include adaptiv-font(18, 14);
          line-height: 29px;
          margin-top: 10px;
       }
@@ -33,7 +33,7 @@
    &__phone {
       display: block;
       font-weight: 700;
-      font-size: 18px;
+      @include adaptiv-font(18, 14);
       color: #ffffff;
       text-decoration: none;
       margin-bottom: 5px;

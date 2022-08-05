@@ -13,9 +13,12 @@
    }
 
    &__icon {
-      margin-bottom: 30px;
+      width: 70px;
+      margin: 0 auto;
+      width: 70px;
 
       img {
+         width: 100%;
          display: block;
          margin: 0 auto;
       }
@@ -25,13 +28,24 @@
       font-weight: 700;
       font-size: 18px;
       color: $main_text_color;
-      margin-bottom: 20px;
+      margin: 20px 0;
    }
 
    &__descr {
       font-weight: 500;
-      font-size: 17px;
+      @include adaptiv-font(14, 13);
       line-height: 18px;
       color: $main_text_color;
+
+      a {
+         @include adaptiv-font(13, 11);
+         line-height: 18px;
+         text-decoration-line: underline;
+         color: #ff0000;
+      }
+   }
+
+   .wrap {
+      display: none;
    }
 }
