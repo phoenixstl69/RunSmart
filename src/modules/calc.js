@@ -1,2 +1,6 @@
-export const mult = (a, b) => a * b;
-export const sum = async(a, b) => a + b;
+var slider = tns({
+   container: '.my-slider',
+   items: 3,
+   slideBy: 'page',
+   autoplay: true
+});

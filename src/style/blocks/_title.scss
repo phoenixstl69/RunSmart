@@ -4,12 +4,26 @@
    line-height: 30px;
    text-align: center;
    color: $main_text_color;
+   text-transform: uppercase;
 
    &__main {
       @include adaptiv-font(42, 30);
-      font-weight: 700;
       line-height: 45px;
-      text-transform: uppercase;
       color: $second_text_color;
+   }
+
+   &__left {
+      @include adaptiv-font(36, 20);
+      line-height: 54px;
+      color: $second_text_color;
+      text-align: left;
+   }
+}
+
+@media screen and (max-width: 768px) {
+   .title {
+      &__left {
+         text-align: center;
+      }
    }
 }
